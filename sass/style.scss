@@ -1,8 +1,21 @@
+$colorfondo:#161B31;
+$colortitulo:#19D1AF;
+$colorboton:#12BC78; 
+*{
+    padding: 0;
+    margin: 0;
+}
 #contenedor_secundario{
     margin: 0 auto;
     width: 1024px;
+    background-color: $colorboton;
 }
 #nissa{
     width: 308px;
-    height: 560px ;
+    height: 560px;
+    padding-left:204px ;
+}
+h1{
+    color: $colortitulo;
+    text-align: center;
 }
