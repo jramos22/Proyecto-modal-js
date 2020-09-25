@@ -1,2 +1,7 @@
-p {
-  background-color: aqua; }
+#contenedor_secundario {
+  margin: 0 auto;
+  width: 1024px; }
+
+#nissa {
+  width: 308px;
+  height: 560px; }
