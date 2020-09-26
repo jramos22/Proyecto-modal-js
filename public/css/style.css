@@ -6,7 +6,7 @@ body {
   margin: 0; }
 
 #contenedor_principal {
-  padding-top: 30px; }
+  padding-top: 50px; }
 
 #contenedor_secundario {
   margin: 0 auto;
@@ -27,9 +27,25 @@ body {
 h1 {
   color: #19D1AF;
   text-align: center;
-  padding-bottom: 30px; }
+  padding-bottom: 60px; }
 
 .clearfix::after {
   content: "";
   clear: both;
   display: table; }
+
+#threshb {
+  padding: 15px;
+  margin-top: 40px;
+  margin-left: 240px;
+  color: #161B31;
+  background-color: #12BC78;
+  font-size: 20px; }
+
+#nissab {
+  padding: 15px;
+  margin-top: 40px;
+  margin-left: 270px;
+  color: #161B31;
+  background-color: #12BC78;
+  font-size: 20px; }
