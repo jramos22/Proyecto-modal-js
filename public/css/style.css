@@ -1,17 +1,35 @@
+body {
+  background-color: #161B31; }
+
 * {
   padding: 0;
   margin: 0; }
 
+#contenedor_principal {
+  padding-top: 30px; }
+
 #contenedor_secundario {
   margin: 0 auto;
-  width: 1024px;
-  background-color: #12BC78; }
+  width: 1024px; }
 
 #nissa {
   width: 308px;
   height: 560px;
-  padding-left: 204px; }
+  padding-left: 150px;
+  float: left; }
+
+#thresh {
+  width: 308px;
+  height: 560px;
+  padding-left: 104px;
+  padding-right: 100px; }
 
 h1 {
   color: #19D1AF;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 30px; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
