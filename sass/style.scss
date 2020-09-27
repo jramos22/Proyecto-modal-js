@@ -1,6 +1,8 @@
 $colorfondo:#161B31;
 $colortitulo:#19D1AF;
-$colorboton:#12BC78; 
+$colorboton:#12BC78;
+@import'./Mixins/mixin';
+
 body{
     background-color: $colorfondo;
 }
@@ -53,4 +55,20 @@ h1{
     color: $colorfondo;
     background-color: $colorboton;
     font-size: 20px;
+}
+
+.modal {
+    @include modal;
+}
+
+.contenidoModal {
+    @include modalContenido;
+}
+
+.cerrar {
+    @include close;
+}
+
+.cerrar:hover, .close:focus {
+    @include close_Hover;
 }
