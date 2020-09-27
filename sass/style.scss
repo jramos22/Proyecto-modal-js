@@ -62,10 +62,13 @@ h1{
     
 }
 
-#modal {
+#modal1 {
     @include modal;
 }
 
+#modal2 {
+    @include modal;
+}
 .contenidoModal {
     @include modalContenido;
 }
@@ -73,8 +76,14 @@ h1{
 .cerrar {
     @include close;
 }
+.salir{
+    @include close;
+}
 
 .cerrar:hover, .close:focus {
+    @include close_Hover;
+}
+.salir:hover, .salir:focus {
     @include close_Hover;
 }
 
@@ -92,7 +101,7 @@ h1{
     @include subTitulo;
 }
 
-#historia-nissa{
+.historia{
     @include contenido;
 }
 
