@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 body {
-  background-color: #161B31; }
+  background-color: #161B31;
+  font-family: 'Courier Prime', monospace; }
 
 * {
   padding: 0;
@@ -80,3 +83,7 @@ h1 {
   color: #000;
   text-decoration: none;
   cursor: pointer; }
+
+.titulo {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px; }

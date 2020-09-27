@@ -3,8 +3,12 @@ $colortitulo:#19D1AF;
 $colorboton:#12BC78;
 @import'./Mixins/mixin';
 
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 body{
     background-color: $colorfondo;
+    font-family: 'Courier Prime', monospace;
 }
 *{
     padding: 0;
@@ -55,6 +59,7 @@ h1{
     color: $colorfondo;
     background-color: $colorboton;
     font-size: 20px;
+    
 }
 
 .modal {
@@ -71,4 +76,9 @@ h1{
 
 .cerrar:hover, .close:focus {
     @include close_Hover;
+}
+
+.titulo {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
 }
