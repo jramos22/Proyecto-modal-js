@@ -82,3 +82,11 @@ h1{
     font-family: 'Ubuntu', sans-serif;
     font-size: 25px;
 }
+
+.lol {
+    @include subTitulo; 
+}
+
+.magic {
+    @include subTitulo;
+}

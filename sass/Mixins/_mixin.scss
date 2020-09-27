@@ -35,5 +35,9 @@
 
 @mixin subTitulo {
     color: #19D1AF;
+    font-size: 18px;
+}
+
+@mixin contenido {
     font-size: 15px;
 }
