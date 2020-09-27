@@ -64,34 +64,49 @@ h1 {
   height: 100%;
   overflow: auto;
   background-color: black;
-  background-color: rgba(0, 0, 0, 0.4); }
+  background-color: rgba(250, 250, 250, 0.4); }
 
 .contenidoModal {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; }
+  width: 40%;
+  position: relative; }
 
 .cerrar {
-  color: #aaaaaa;
+  color: #000;
   float: right;
   font-size: 28px;
   font-weight: bold; }
 
 .cerrar:hover, .close:focus {
-  color: #000;
+  color: #19D1AF;
   text-decoration: none;
   cursor: pointer; }
 
 .titulo {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 25px; }
+  font-size: 25px;
+  color: #027A42; }
 
 .lol {
-  color: #19D1AF;
+  color: #888;
   font-size: 18px; }
 
 .magic {
-  color: #19D1AF;
+  color: #888;
   font-size: 18px; }
+
+#historia-nissa {
+  font-size: 15px;
+  margin-top: 25px;
+  padding-right: 300px;
+  color: #080000; }
+
+.imagen {
+  float: left;
+  width: 100px;
+  position: absolute;
+  left: 560px;
+  top: 100px; }
