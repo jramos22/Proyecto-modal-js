@@ -10,22 +10,14 @@ const boton = document.getElementById("nissab");
 const cierre = document.getElementsByClassName("cerrar")[0];
 
 //Muesta el Modal
-boton.onclick = function() {
+boton.onclick = function () {
   ventanaModal.style.display = "block";
 }
 
 //cierra el modal cuando se toca el boton de cierre.
-cierre.onclick = function() {
+cierre.onclick = function () {
   ventanaModal.style.display = "none";
 }
-
-//Cierra el modal cuando se toca fuera de dicha ventana.
-window.onclick = function(event) {
-  if (event.target == ventanaModal2) {
-    ventanaModal2.style.display = "none";
-  }
-}
-
 
 //Thresh
 
@@ -39,18 +31,20 @@ const boton2 = document.getElementById("threshb");
 const cierre2 = document.getElementsByClassName("salir")[0];
 
 //Muesta el Modal
-boton2.onclick = function() {
+boton2.onclick = function () {
   ventanaModal2.style.display = "block";
 }
 
 //cierra el modal cuando se toca el boton de cierre.
-cierre2.onclick = function() {
+cierre2.onclick = function () {
   ventanaModal2.style.display = "none";
 }
 
-//Cierra el modal cuando se toca fuera de dicha ventana.
-window.onclick = function(event) {
-  if (event.target == ventanaModal2) {
+//Cierra la ventana modal respetiva cuando se toca fuera de dicha ventana
+window.onclick = function (event) {
+  if (event.target == ventanaModal) {
+    ventanaModal.style.display = "none";
+  } else if (event.target == ventanaModal2) {
     ventanaModal2.style.display = "none";
   }
 }
