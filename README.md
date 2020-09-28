@@ -1,5 +1,8 @@
 # Proyecto-modal-js 
 
-Tenemos dos botones de información, eso quiere decir que tenemos un  evento que se disparan al darle click se abrira la ventana modal y tendremos un evento que se disparan al cerrar la ventana modal dandole click a un boton de cerrar, el ultimo evento se dispara al tocar click fuera de la ventana modal para cerrar dicha ventana
+Para este proyecto utilizamos sass por que es algo que nos enseño el profe de Web y queriamos empezer a practicarlo por eso decidimos implementarlo en esta ocación.
 
-Nuestra estrutura de Html es básica tiene dos botones de información, dos imajenes y los contenidos de las ventana modal
+Nuestra estrutura de HTML es básica tiene dos botones de información, dos imagenes de personajes de un juego de cartas y un juego virtual, los contenidos de las ventana modal tienen una brebe descripcion de dichos personajes.
+
+El funcionamiento de nuestro script se podria describir de la siguiente forma:
+contamos con dos botones de información los cuales al darle click disparan el evento que llama a la ventana modal, respectivamente del personaje que queramos ver, dichas ventanas cuentan con un boton de cierre el cual al dale click dispara el evento que cierra la venta, tambien se puede acceder a este evento dando click fuera de la ventana modal.
