@@ -1,10 +1,10 @@
 //Nissa
 
 //Este proceso llama al div que contiene la ventana
-const ventanaModal = document.getElementById("modal1");
+const ventanaModal = document.getElementsByClassName("modal1");
 
 //Este proceso llama al boton para abrir el modal del peronaje Nissa.
-const boton = document.getElementById("nissab");
+const boton = document.getElementsByClassName("nissab");
 
 //cierra la ventana de Nissa.
 const cierre = document.getElementsByClassName("cerrar")[0];
@@ -22,10 +22,10 @@ cierre.onclick = function () {
 //Thresh
 
 //Este proceso llama al div que contiene la ventana
-const ventanaModal2 = document.getElementById("modal2");
+const ventanaModal2 = document.getElementsByClassName("modal2");
 
 //Este proceso llama al boton para abrir el modal del peronaje thresh.
-const boton2 = document.getElementById("threshb");
+const boton2 = document.getElementsByClassName("threshb");
 
 //cierra la ventana de Thresh.
 const cierre2 = document.getElementsByClassName("salir")[0];
