@@ -10,14 +10,9 @@ const boton = document.getElementsByClassName("nissab");
 const cierre = document.getElementsByClassName("cerrar")[0];
 
 //Muesta el Modal
-boton.onclick = function () {
-  ventanaModal.style.display = "block";
-}
 
 //cierra el modal cuando se toca el boton de cierre.
-cierre.onclick = function () {
-  ventanaModal.style.display = "none";
-}
+
 
 //Thresh
 
@@ -31,20 +26,33 @@ const boton2 = document.getElementsByClassName("threshb");
 const cierre2 = document.getElementsByClassName("salir")[0];
 
 //Muesta el Modal
-boton2.onclick = function () {
-  ventanaModal2.style.display = "block";
-}
-
 //cierra el modal cuando se toca el boton de cierre.
-cierre2.onclick = function () {
-  ventanaModal2.style.display = "none";
-}
-
 //Cierra la ventana modal respetiva cuando se toca fuera de dicha ventana
-window.onclick = function (event) {
+
+ventanaModal[0].classList.add('js_content_hidden');
+ventanaModal2[0].classList.add('js_content_hidden');
+
+boton[0].addEventListener('click',()=>{
+  ventanaModal[0].classList.remove('js_content_hidden');
+})
+
+cierre.addEventListener('click',()=>{
+  ventanaModal[0].classList.add('js_content_hidden');
+})
+
+boton2[0].addEventListener('click',()=>{
+  ventanaModal2[0].classList.remove('js_content_hidden');
+})
+
+cierre2.addEventListener('click',()=>{
+  ventanaModal2[0].classList.add('js_content_hidden');
+})
+
+/*  = function (event) {
   if (event.target == ventanaModal) {
+    console.log('porque?');
     ventanaModal.style.display = "none";
   } else if (event.target == ventanaModal2) {
     ventanaModal2.style.display = "none";
   }
-}
+}*/
