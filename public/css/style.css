@@ -7,17 +7,17 @@ body {
   margin: 0;
   padding-top: 50px; }
 
-#contenedor_secundario {
+.estructura {
   margin: 0 auto;
   width: 1024px; }
 
-#nissa {
+.nissa {
   width: 308px;
   height: 560px;
   padding-left: 150px;
   float: left; }
 
-#thresh {
+.thresh {
   width: 308px;
   height: 560px;
   padding-left: 104px;
@@ -33,7 +33,7 @@ h1 {
   clear: both;
   display: table; }
 
-#threshb {
+.threshb {
   padding: 15px;
   margin-top: 40px;
   margin-left: 240px;
@@ -41,7 +41,7 @@ h1 {
   background-color: #12BC78;
   font-size: 20px; }
 
-#nissab {
+.nissab {
   padding: 15px;
   margin-top: 40px;
   margin-left: 270px;
@@ -49,7 +49,7 @@ h1 {
   background-color: #12BC78;
   font-size: 20px; }
 
-#modal1 {
+.modal1 {
   display: none;
   position: fixed;
   z-index: 1;
@@ -62,7 +62,7 @@ h1 {
   background-color: black;
   background-color: rgba(250, 250, 250, 0.4); }
 
-#modal2 {
+.modal2 {
   display: none;
   position: fixed;
   z-index: 1;
