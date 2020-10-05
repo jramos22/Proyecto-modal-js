@@ -4,9 +4,7 @@ body {
   background-color: #161B31;
   font-family: 'Courier Prime', monospace;
   padding: 0;
-  margin: 0; }
-
-#contenedor_principal {
+  margin: 0;
   padding-top: 50px; }
 
 #contenedor_secundario {
