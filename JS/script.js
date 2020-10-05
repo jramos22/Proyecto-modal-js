@@ -56,3 +56,6 @@ cierre2.addEventListener('click',()=>{
     ventanaModal2.style.display = "none";
   }
 }*/
+//falta solución 
+//'cargando'....
+//'cargando'.....
