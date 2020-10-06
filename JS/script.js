@@ -1,3 +1,5 @@
+//  Inicializamos variables de ambos modales 
+
 //Nissa
 
 //Este proceso llama al div que contiene la ventana
@@ -8,10 +10,6 @@ const boton = document.getElementsByClassName("nissab");
 
 //cierra la ventana de Nissa.
 const cierre = document.getElementsByClassName("cerrar")[0];
-
-//Muesta el Modal
-
-//cierra el modal cuando se toca el boton de cierre.
 
 
 //Thresh
@@ -25,37 +23,34 @@ const boton2 = document.getElementsByClassName("threshb");
 //cierra la ventana de Thresh.
 const cierre2 = document.getElementsByClassName("salir")[0];
 
+
+
+// Se ocultan ambas ventanas modal desde JS
+ventanaModal[0].classList.add('Ocultar');
+ventanaModal2[0].classList.add('Ocultar');
+
 //Muesta el Modal
-//cierra el modal cuando se toca el boton de cierre.
-//Cierra la ventana modal respetiva cuando se toca fuera de dicha ventana
-
-ventanaModal[0].classList.add('js_content_hidden');
-ventanaModal2[0].classList.add('js_content_hidden');
-
 boton[0].addEventListener('click',()=>{
-  ventanaModal[0].classList.remove('js_content_hidden');
+  ventanaModal[0].classList.remove('Ocultar');
 })
-
+//cierra el modal cuando se toca el boton de cierre.
 cierre.addEventListener('click',()=>{
-  ventanaModal[0].classList.add('js_content_hidden');
+  ventanaModal[0].classList.add('Ocultar');
 })
 
+//Muesta el Modal
 boton2[0].addEventListener('click',()=>{
-  ventanaModal2[0].classList.remove('js_content_hidden');
+  ventanaModal2[0].classList.remove('Ocultar');
 })
 
+//cierra el modal cuando se toca el boton de cierre.
 cierre2.addEventListener('click',()=>{
-  ventanaModal2[0].classList.add('js_content_hidden');
+  ventanaModal2[0].classList.add('Ocultar');
 })
 
-/*  = function (event) {
-  if (event.target == ventanaModal) {
-    console.log('porque?');
-    ventanaModal.style.display = "none";
-  } else if (event.target == ventanaModal2) {
-    ventanaModal2.style.display = "none";
-  }
-}*/
-//falta solución 
-//'cargando'....
-//'cargando'.....
+//cargando....
+//cargando.....
+//cargando......
+//cargando.......
+//cargando........
+//cargando.........
