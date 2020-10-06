@@ -1,50 +1,56 @@
+//  Inicializamos variables de ambos modales 
+
 //Nissa
 
 //Este proceso llama al div que contiene la ventana
-const ventanaModal = document.getElementById("modal1");
+const ventanaModal = document.getElementsByClassName("modal1");
 
 //Este proceso llama al boton para abrir el modal del peronaje Nissa.
-const boton = document.getElementById("nissab");
+const boton = document.getElementsByClassName("nissab");
 
 //cierra la ventana de Nissa.
 const cierre = document.getElementsByClassName("cerrar")[0];
 
-//Muesta el Modal
-boton.onclick = function () {
-  ventanaModal.style.display = "block";
-}
-
-//cierra el modal cuando se toca el boton de cierre.
-cierre.onclick = function () {
-  ventanaModal.style.display = "none";
-}
 
 //Thresh
 
 //Este proceso llama al div que contiene la ventana
-const ventanaModal2 = document.getElementById("modal2");
+const ventanaModal2 = document.getElementsByClassName("modal2");
 
 //Este proceso llama al boton para abrir el modal del peronaje thresh.
-const boton2 = document.getElementById("threshb");
+const boton2 = document.getElementsByClassName("threshb");
 
 //cierra la ventana de Thresh.
 const cierre2 = document.getElementsByClassName("salir")[0];
 
+
+
+// Se ocultan ambas ventanas modal desde JS
+ventanaModal[0].classList.add('Ocultar');
+ventanaModal2[0].classList.add('Ocultar');
+
 //Muesta el Modal
-boton2.onclick = function () {
-  ventanaModal2.style.display = "block";
-}
+boton[0].addEventListener('click',()=>{
+  ventanaModal[0].classList.remove('Ocultar');
+})
+//cierra el modal cuando se toca el boton de cierre.
+cierre.addEventListener('click',()=>{
+  ventanaModal[0].classList.add('Ocultar');
+})
+
+//Muesta el Modal
+boton2[0].addEventListener('click',()=>{
+  ventanaModal2[0].classList.remove('Ocultar');
+})
 
 //cierra el modal cuando se toca el boton de cierre.
-cierre2.onclick = function () {
-  ventanaModal2.style.display = "none";
-}
+cierre2.addEventListener('click',()=>{
+  ventanaModal2[0].classList.add('Ocultar');
+})
 
-//Cierra la ventana modal respetiva cuando se toca fuera de dicha ventana
-window.onclick = function (event) {
-  if (event.target == ventanaModal) {
-    ventanaModal.style.display = "none";
-  } else if (event.target == ventanaModal2) {
-    ventanaModal2.style.display = "none";
-  }
-}
+//cargando....
+//cargando.....
+//cargando......
+//cargando.......
+//cargando........
+//cargando.........
