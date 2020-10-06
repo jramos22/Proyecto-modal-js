@@ -6,3 +6,5 @@ Nuestra estrutura de HTML es básica tiene dos botones de información, dos imag
 
 El funcionamiento de nuestro script se podria describir de la siguiente forma:
 contamos con dos botones de información los cuales al darle click disparan el evento que llama a la ventana modal, respectivamente del personaje que queramos ver, dichas ventanas cuentan con un boton de cierre el cual al dale click dispara el evento que cierra la venta, tambien se puede acceder a este evento dando click fuera de la ventana modal.
+
+Cambiamos los estilos con ayuda de JavaScript
