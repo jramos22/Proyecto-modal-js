@@ -1,56 +1,61 @@
 //  Inicializamos variables de ambos modales 
 
-//Nissa
 
-//Este proceso llama al div que contiene la ventana
-const ventanaModal = document.getElementsByClassName("modal1");
+const botones = document.querySelectorAll(' .bottones');
 
-//Este proceso llama al boton para abrir el modal del peronaje Nissa.
-const boton = document.getElementsByClassName("nissab");
+const cierre = document.querySelectorAll(' .bottonesCierre');
 
-//cierra la ventana de Nissa.
-const cierre = document.getElementsByClassName("cerrar")[0];
-
-
-//Thresh
-
-//Este proceso llama al div que contiene la ventana
-const ventanaModal2 = document.getElementsByClassName("modal2");
-
-//Este proceso llama al boton para abrir el modal del peronaje thresh.
-const boton2 = document.getElementsByClassName("threshb");
-
-//cierra la ventana de Thresh.
-const cierre2 = document.getElementsByClassName("salir")[0];
+const contenido = document.querySelectorAll(' .contenido');
 
 
 
-// Se ocultan ambas ventanas modal desde JS
-ventanaModal[0].classList.add('Ocultar');
-ventanaModal2[0].classList.add('Ocultar');
+for (let i = 0; i < contenido.length; i++) {
+  contenido[i].classList.add('ocultar');
+}
 
-//Muesta el Modal
-boton[0].addEventListener('click',()=>{
-  ventanaModal[0].classList.remove('Ocultar');
-})
-//cierra el modal cuando se toca el boton de cierre.
-cierre.addEventListener('click',()=>{
-  ventanaModal[0].classList.add('Ocultar');
-})
+for (let i = 0; i < botones.length; i++) {
+  botones[i].addEventListener('click', (event) => {
+      event.preventDefault();
+      const id = event.currentTarget.getAttribute('href').substring(1);
+      console.log(id);
 
-//Muesta el Modal
-boton2[0].addEventListener('click',()=>{
-  ventanaModal2[0].classList.remove('Ocultar');
-})
 
-//cierra el modal cuando se toca el boton de cierre.
-cierre2.addEventListener('click',()=>{
-  ventanaModal2[0].classList.add('Ocultar');
-})
+      for (let i = 0; i < contenido.length; i++) {
+          contenido[i].classList.add('ocultar');
+          if (contenido[i].getAttribute('id') == id) {
+              contenido[i].classList.remove('ocultar');
+          }
+      }
+    
+  });
+}
 
+for (let i = 0; i < cierre.length; i++) {
+  cierre[i].addEventListener('click', (event) => {
+      event.preventDefault();
+      const id = event.currentTarget.getAttribute('href').substring(1);
+      console.log(id);
+
+
+      for (let i = 0; i < contenido.length; i++) {
+          contenido[i].classList.add('ocultar');
+          if (contenido[i].getAttribute('id') == id) {
+              contenido[i].classList.remove('ocultar');
+          }
+      }
+    
+  });
+}
+
+//cargando.
+//cargando..
+//cargando...
 //cargando....
 //cargando.....
 //cargando......
-//cargando.......
 //cargando........
 //cargando.........
+//cargando..........
+//cargando...........
+//cargando............
+//cargando.............
